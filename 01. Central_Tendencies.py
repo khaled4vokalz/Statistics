@@ -1,12 +1,5 @@
-from random import randint
+from helper import num_friends
 from collections import Counter
-
-def get_random_friends_array():
-    for _ in range(100):
-        yield randint(0,101)
-
-# for now we generate random numbers between 0 and 100 as friends counter
-num_friends = list(get_random_friends_array())
 
 def mean(x):                                # mean is just the average of the list contents
     return sum(x)/len(x)
