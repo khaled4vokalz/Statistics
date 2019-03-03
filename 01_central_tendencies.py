@@ -15,7 +15,8 @@ def median(v):
     sorted_v = sorted(v)                    # this is one way of finding the median by sorting the list
                                             # there can be other ways but that's not important for our
                                             # cause
-    midpoint = n // 2
+    
+    midpoint = n // 2                       # doing integer division
 
     if(n % 2) == 1:
         # if odd, return the middle value
@@ -41,6 +42,7 @@ def quantile(x, p):
     p_index = int(p * len(x))
     return sorted(x)[p_index]
 
+print("NUM_FRIENDS: ", num_friends)
 print("10-th quantile:", quantile(num_friends, 0.10))
 print("25-th quantile:", quantile(num_friends, 0.25))
 print("75-th quantile:", quantile(num_friends, 0.75))
